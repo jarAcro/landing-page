@@ -43,60 +43,50 @@ background: linear-gradient(90deg, rgba(102,101,100,0.5830707282913166) 34%, rgb
    margin-left: 25px;
 }
 
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Poppins:wght@500&family=Roboto&display=swap');
-*{
-  font-family: Montserrat, sans-serif;
+.above-form{
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding:0;
 }
-
-body{
-  padding-top: 100px;
+form{
+  text-align: center;
+  display: block;
+  
 }
-
-h1{
+#email{
+width: 240px;
+height: 20px;
+}
+#submit{
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10%;
+  background-color: rgb(247, 215, 145);
+  margin-bottom: 40px;
+}
+#submit:hover{
+  background-color: #141310;
+  cursor: pointer;
+ transform: scale(1.1);
+ color: white;
+}
+#main {
+  display: block;
   text-align: center;
 }
 
-#header-img{
-  max-width: 250px;
-  max-height: 250px;
+.bx:not(#main){
+font-size: 55px;
+text-align: left;
 }
-
-#header{
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background: rgb(102,101,100);
-background: linear-gradient(90deg, rgba(102,101,100,0.5830707282913166) 34%, rgba(241,201,131,0.6923144257703081) 90%);
-  height: 85px;
-  gap: 80px;
-  top: 0;
-  left:0;
+.bx:last-child{
+margin-bottom: 100px;
 }
-
-#nav-bar{
-  font-size: 25px;
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-
-#nav-bar .nav-link{
-   text-decoration: none;
-   color: black;
-   margin: 25px auto;
-   margin-left: 25px;
-}
-
-
-
-
-
 
 
 
@@ -111,8 +101,6 @@ background: linear-gradient(90deg, rgba(102,101,100,0.5830707282913166) 34%, rgb
 footer{
   bottom:0;
   width: 100%;
- 
-
 }
 footer li{
   list-style: none;
@@ -132,7 +120,54 @@ ul li a{
 
 
 
-@media(){
-  
+/*media query that changes the size of the font to be smaller then it is now.
+the color of the text should turn white and the background should turn black. */
+@media (max-width: 600px){
+  body{
+    background-color: black;
+  }
+  *{
+    color: white;
+  }
+  .bx{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+  }
+  #header{
+    height: 50px;
+  }
+  #header-img{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #nav-bar{
+    font-size: 15px;
+    gap: 50px;
+  }
+  #nav-bar .nav-link{
+    margin: 10px auto;
+    margin-left: 10px;
+  }
+  #submit{
+    width: 50px;
+    height: 20px;
+    margin-top: 5px;
+  }
+  #submit:hover{
+    transform: scale(1.1);
+  }
+  footer{
+    font-size: 10px;
+  }
+  footer li{
+    gap: 10px;
+  }
+  ul li{
+    margin: 0 10px;
+  }
 }
+```
+```
+
 
