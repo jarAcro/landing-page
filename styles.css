@@ -1,0 +1,60 @@
+body{
+    padding-top: 150px;
+  }
+  
+  
+  #header-img{
+    max-width: 250px;
+    max-height: 250px;
+  }
+  #header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: rgb(102,101,100);
+  background: linear-gradient(90deg, rgba(102,101,100,0.5830707282913166) 34%, rgba(241,201,131,0.6923144257703081) 90%);
+    height: 85px;
+    gap: 80px;
+    top: 0;
+    left:0;
+    
+  }
+  
+  #nav-bar{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+  }
+  
+  #nav-bar .nav-link{
+     text-decoration: none;
+     color: black;
+     margin: 25px auto;
+     margin-left: 25px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media(){
+    
+  }
