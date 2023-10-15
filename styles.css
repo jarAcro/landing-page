@@ -80,17 +80,35 @@ height: 20px;
   text-align: center;
 }
 
-.bx:not(#main){
+.bx{
 font-size: 55px;
 text-align: left;
+
 }
 .bx:last-child{
 margin-bottom: 100px;
 }
 
+iframe{
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+iframe:hover{
+  transform: scale(2.5);
+}
+.about{
+  display: block;
+  max-width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+}
+.pricing{
+  border: 1px solid black;
+  width: 100%;
 
-
-
+}
 
 
 
@@ -101,28 +119,38 @@ margin-bottom: 100px;
 footer{
   bottom:0;
   width: 100%;
+  height: 100px;
+  background-color: #62615d;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 250px;
+
 }
 footer li{
   list-style: none;
   align-items: center;
   gap: 50px;
+  margin-top: 25px;
 
 }
 ul li{
   display: inline-block;
   margin: 0 40px;
   list-style: none;
+  margin-top: 40px;
+  
 }
 ul li a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 
 
 /*media query that changes the size of the font to be smaller then it is now.
 the color of the text should turn white and the background should turn black. */
-@media (max-width: 600px){
+@media (max-width: 1000px){
   body{
     background-color: black;
   }
